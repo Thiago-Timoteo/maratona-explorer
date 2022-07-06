@@ -1,0 +1,116 @@
+*{/*aplica efeitos a todos os elementos*/
+    margin: 0;               /*retira a margem da pagina*/
+    padding: 0;              /*retira o preenchimento*/
+    box-sizing: border-box;  /*tamanho da caixa igual ao tamanho da borda da caixa*/
+  }
+  
+  a{
+    text-decoration: none;/*tira o sublinhado do texto*/
+  }
+  html{/*criação de variaveis de cor*/
+    --bg-color: #EDF2FF;
+    --text-color: #00082F ;
+    --primary-color: #4263EB;
+    --primary-color-dark:#364FC7 ;
+  }
+  
+  body.dark-blue{
+    --bg-color: #00082F ;
+    --text-color:#EDF2FF;
+    --primary-color: #4263EB;
+    --primary-color-dark:#364FC7 ;
+  }
+  
+  body.pink{
+    --bg-color: #FFF0F6;
+    --text-color: #1F000B;
+    --primary-color: #D6336C;
+    --primary-color-dark:#A61E4D ;
+  }
+  body.dark-pink{
+    --bg-color: #1F000B;
+    --text-color: #FFF0F6;
+    --primary-color: #D6336C;
+    --primary-color-dark:#A61E4D ;
+  }
+  
+  body{/*referencia o corpo do HTML*/
+    background: var(--bg-color); /*define uma cor para a pagina*/
+    color: var(--text-color);    /*define a cor do texto*/
+    font-family: 'Roboto', sans-serif;/*define um tipo de fonte*/
+  }
+  
+  .container{/*define o espaço da caixa*/
+    text-align: center;/*define o texto no centro do bloco*/
+    width: 300px;      /*define a largura dos blocos*/
+    margin: 60px auto; /*define a margem superior e as laterais sao automaticas*/
+    }
+  
+  
+  img{/*define que o tamanho de todas as imagens é o tamanho da caixa*/
+    width: 100%;
+  }
+  
+  img.avatar{/*deixa a foto redonda com margem e borda*/
+    border-radius: 50%; /*faz a foto ficar circular*/
+    width: 100px;       /*define a largura da imagem*/
+    height: 100px;      /*define a altura da imagem*/
+    padding: 3.7px;     /*define a parte branca entre a imagem e a borda*/
+    border: var(--primary-color) solid 4px; /*cria uma borda ao redor da imagem com 4px de expessura*/
+  }
+  
+  h1{/*define o tamanho cor e espaçamento do nome*/
+    font-size: 32px;   /*define o tamanho do título*/
+    margin-top: 24px;  /*define um espço vazio a cima do titulo de 24px*/
+    margin-bottom: 8px;/*define um espço vazio abaixo do titulo de 8px*/
+  }/**/
+  
+  .username{/*define a fonte, intensidade, cor, opacidade e tamanho da fonte*/
+    font-family: 'Roboto Mono', monospace;/*define a fonte retirada do google fonts*/
+    font-weight: 400; /*define a intencidade da fonte*/
+    opacity: 0.8;     /*define a opacidade da fonte*/
+    font-size: 18px;  /*define o tamanho da fonte*/
+  
+  }
+  
+  ul{/*aplica em todas os elementos contidos em ul*/
+    list-style: none; /*retira o estilo da lista*/
+    margin: 48px 0px; /*define a margem da lista*/
+  }
+  
+  ul li a{/*todas as alterções seram feitas em todos os a(elementos ancoras) 
+  contidos em li que estao contidos em ul */
+    height: 53px;              /*define a altura dos blocos da lista*/
+      display: flex;           /*define o display como flexivel*/
+      align-items: center;     /*alinha o texto da lista verticalmente*/
+      justify-content: center; /*alinha o texto da lista hotizontalmente*/
+      background: var(--primary-color);   /*define uma cor de fundo para a lista*/
+      color: white;          /*define uma cor par o texto*/
+      font-size: 14px;         /*define o tamanho da fonte*/
+  
+      margin-bottom: 16px;     /*define o espaçamento entre os itens*/
+      border-radius: 6px;      /*define a curvatura das bordas*/
+  
+      transition: 400ms;       /*define a velocidade de transição
+       da coloração da lista ao passar o mouse*/
+  }
+  
+  ul li a:hover{/*define a cor que a lista vai assumir quando o mouse ficar
+   em cima de um item*/
+  background: var(--primary-color-dark);
+  }
+  footer{/*define o peso da fonte, o tamanho, a cor, opacidade e velocidade
+  de transição da opacidade*/
+    font-weight: 500;   /*define o peso ou nesse caso a intensidade da fonte*/
+    font-size: 12px;    /*tamanho da fonte*/
+    opacity: 0.6;       /*opacidade da fonte do rodapé*/
+    transition: opacity 400ms; /*tempo em que ocorre a troca do valor da opacidade*/
+  }
+  footer:hover{/*difine a opacidade que sera utilizada ao colocar o mouse em cima
+  do texto do rodapé*/
+    opacity: 1;
+  }
+  footer a{/*define a cor do rocketseat do rodapé*/
+    color: var(--text-color);
+    
+  }
